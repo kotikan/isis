@@ -1,9 +1,9 @@
 require 'spec_helper'
-require_relative '../../plugins/classicyasir/classic_yasir'
+require_relative '../../plugins/classicyasir/classicyasir'
 
-describe ClassicYasir do
+describe Classicyasir do
 
-  subject { ClassicYasir.new(MockBot.new) }
+  subject { Classicyasir.new(MockBot.new) }
 
   context '#respond_to_message?' do
 

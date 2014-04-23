@@ -1,6 +1,6 @@
 # classicyasir.rb
 
-class ClassicYasir < Isis::Plugin::Base
+class Classicyasir < Isis::Plugin::Base
 
   def respond_to_message?(message)
     if /yasir/i =~ message.content + message.speaker
