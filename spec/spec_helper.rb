@@ -1,7 +1,18 @@
 require 'timecop'
 require 'time'
 require 'tzinfo'
+require_relative '../lib/isis/message'
 require_relative '../lib/isis/plugins'
+
+def create_message(content = nil, speaker = nil, room = nil)
+  Isis::Message.new(
+      {
+          :content => content,
+          :speaker => speaker,
+          :room => room
+      }
+  )
+end
 
 RSpec.configure do |c|
   c.color_enabled = true
