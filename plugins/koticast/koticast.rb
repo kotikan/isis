@@ -26,7 +26,7 @@ class Koticast < Isis::Plugin::Base
     ForecastIO.api_key = forecast_api_key
     lat, lon = 55.946802, -3.201294
     forecast = ForecastIO.forecast(lat, lon)
-    { minutely: forecast.minutely.summary, hourly: forecast.hourly.summary url: %Q(http://forecast.io/#/f/#{lat},#{lon}) }
+    { minutely: forecast.minutely.summary, hourly: forecast.hourly.summary, url: %Q(http://forecast.io/#/f/#{lat},#{lon}) }
   end
   
   def forecast_api_key
