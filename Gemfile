@@ -37,6 +37,9 @@ gem 'barometer', '0.7.3'
 # TWSS
 gem 'twss'
 
+# Koticast
+gem 'forecast_io'
+
 group :development do
   gem 'pry'
   gem 'pry-rescue'
